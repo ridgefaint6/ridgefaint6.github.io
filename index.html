@@ -1,0 +1,1311 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>秘密基地导航入口 - 官方视频门户,发现隐藏好内容</title>
+<meta name="description" content="秘密基地导航入口官方网站，专注城市隐藏角落与独立创作者影像的内容平台，汇聚原创高清视频与创作者社区，持续运营的精品内容生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231c2b3a'/%3E%3Ccircle cx='32' cy='30' r='13' fill='none' stroke='%23f0b429' stroke-width='4'/%3E%3Cpath d='M32 20v6M32 34v6M22 30h6M36 30h6' stroke='%23f0b429' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M22 52h20' stroke='%23f0b429' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --mb-ink:#12202e;
+  --mb-ink-2:#1c2b3a;
+  --mb-paper:#f4f1ea;
+  --mb-paper-2:#eae5da;
+  --mb-gold:#e8a33d;
+  --mb-gold-deep:#c57f1a;
+  --mb-teal:#2f6d6a;
+  --mb-teal-soft:#d9e7e4;
+  --mb-line:#d8d1c3;
+  --mb-text:#2a3742;
+  --mb-muted:#6c7986;
+  --mb-white:#fffdf8;
+  --mb-shadow:0 10px 30px rgba(18,32,46,.10);
+  --mb-radius:14px;
+  --mb-head-h:118px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:var(--mb-head-h)}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,"Segoe UI",sans-serif;
+  background:var(--mb-paper);color:var(--mb-text);line-height:1.75;
+  font-size:16px;-webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+ul{list-style:none}
+.mb-wrap{width:min(1180px,92vw);margin:0 auto}
+.mb-eyebrow{font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--mb-gold-deep);font-weight:700}
+h1,h2,h3,h4{line-height:1.3;color:var(--mb-ink);font-weight:800}
+h2{font-size:clamp(1.5rem,2.6vw,2.1rem);margin-bottom:.45em}
+h3{font-size:clamp(1.08rem,1.6vw,1.28rem);margin-bottom:.35em}
+p{margin-bottom:.85em}
+.mb-section{padding:64px 0;scroll-margin-top:var(--mb-head-h)}
+.mb-section + .mb-section{border-top:1px solid var(--mb-line)}
+.mb-sec-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:14px;margin-bottom:30px}
+.mb-sec-head p{max-width:640px;color:var(--mb-muted);margin:0;font-size:.95rem}
+.mb-btn{
+  display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:999px;
+  font-weight:700;font-size:.92rem;transition:.22s ease;border:1.5px solid transparent;
+}
+.mb-btn-primary{background:var(--mb-ink);color:#fff}
+.mb-btn-primary:hover{background:var(--mb-teal);transform:translateY(-2px)}
+.mb-btn-gold{background:var(--mb-gold);color:#241a06}
+.mb-btn-gold:hover{background:#f2b452;transform:translateY(-2px)}
+.mb-btn-ghost{border-color:rgba(255,255,255,.5);color:#fff}
+.mb-btn-ghost:hover{background:rgba(255,255,255,.14)}
+.mb-btn-line{border-color:var(--mb-ink);color:var(--mb-ink)}
+.mb-btn-line:hover{background:var(--mb-ink);color:#fff}
+.mb-tag{
+  display:inline-block;font-size:.72rem;padding:3px 10px;border-radius:999px;
+  background:var(--mb-teal-soft);color:var(--mb-teal);font-weight:600;letter-spacing:.03em;
+}
+
+/* ===== S1 吸顶公告 + 页头 ===== */
+.mb-sticky{position:sticky;top:0;z-index:60;box-shadow:0 2px 14px rgba(18,32,46,.08)}
+.mb-announce{
+  background:linear-gradient(90deg,var(--mb-ink) 0%,var(--mb-ink-2) 60%,#24404f 100%);
+  color:#e9eef2;font-size:.84rem;padding:9px 0;
+}
+.mb-announce-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.mb-announce-badge{
+  background:var(--mb-gold);color:#241a06;font-weight:800;font-size:.72rem;
+  padding:2px 9px;border-radius:5px;letter-spacing:.08em;white-space:nowrap;
+}
+.mb-announce-text{flex:1;min-width:200px;opacity:.94}
+.mb-announce-text strong{color:var(--mb-gold);font-weight:700}
+.mb-announce-link{color:var(--mb-gold);font-weight:700;white-space:nowrap;font-size:.82rem}
+.mb-announce-link:hover{text-decoration:underline}
+.mb-header{background:rgba(244,241,234,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--mb-line)}
+.mb-header-row{display:flex;align-items:center;gap:22px;padding:14px 0}
+.mb-logo{display:flex;align-items:center;gap:11px;flex-shrink:0}
+.mb-logo-mark{width:42px;height:42px;border-radius:12px;background:var(--mb-ink);display:grid;place-items:center}
+.mb-logo-mark svg{width:24px;height:24px}
+.mb-logo-text b{display:block;font-size:1.06rem;color:var(--mb-ink);letter-spacing:.02em}
+.mb-logo-text span{display:block;font-size:.68rem;color:var(--mb-muted);letter-spacing:.18em;text-transform:uppercase}
+.mb-nav{margin-left:auto;display:flex;gap:4px;align-items:center}
+.mb-nav a{font-size:.9rem;font-weight:600;color:var(--mb-ink);padding:8px 13px;border-radius:8px;transition:.18s}
+.mb-nav a:hover{background:var(--mb-paper-2);color:var(--mb-teal)}
+.mb-search{position:relative;display:flex;align-items:center;gap:0}
+.mb-search input{
+  width:196px;padding:9px 38px 9px 14px;border-radius:999px;border:1.5px solid var(--mb-line);
+  background:var(--mb-white);font-size:.86rem;color:var(--mb-text);outline:none;transition:.2s;
+}
+.mb-search input:focus{border-color:var(--mb-teal);width:230px;box-shadow:0 0 0 3px rgba(47,109,106,.12)}
+.mb-search button{position:absolute;right:4px;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;color:var(--mb-teal)}
+.mb-search button:hover{background:var(--mb-teal-soft)}
+.mb-search-tip{
+  position:absolute;top:calc(100% + 8px);left:0;right:0;background:var(--mb-white);
+  border:1px solid var(--mb-line);border-radius:10px;box-shadow:var(--mb-shadow);
+  padding:10px 12px;font-size:.8rem;color:var(--mb-muted);display:none;z-index:70;
+}
+.mb-search-tip.on{display:block}
+.mb-search-tip strong{color:var(--mb-teal)}
+.mb-menu-toggle{display:none;width:40px;height:40px;border-radius:10px;border:1.5px solid var(--mb-line);color:var(--mb-ink);font-size:1.1rem;background:var(--mb-white)}
+
+/* ===== 首屏 6:4 ===== */
+.mb-hero{background:linear-gradient(160deg,#101d29 0%,#1c2b3a 55%,#25444c 100%);color:#eef2f4;padding:58px 0 0;overflow:hidden;position:relative}
+.mb-hero::after{content:"";position:absolute;inset:auto -80px -120px auto;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(232,163,61,.20),transparent 68%)}
+.mb-hero-grid{display:grid;grid-template-columns:6fr 4fr;gap:46px;align-items:center;position:relative;z-index:2}
+.mb-hero h1{font-size:clamp(2.1rem,4.6vw,3.5rem);color:#fff;letter-spacing:.01em;margin:.24em 0 .3em}
+.mb-hero h1 em{font-style:normal;color:var(--mb-gold);position:relative;white-space:nowrap}
+.mb-hero-sub{color:#c8d3db;font-size:1.02rem;max-width:560px;margin-bottom:22px}
+.mb-hero-intro{color:#a9b7c2;font-size:.93rem;max-width:600px;border-left:3px solid var(--mb-gold);padding-left:16px;margin-bottom:26px}
+.mb-hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:34px}
+.mb-hero-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;border-top:1px solid rgba(255,255,255,.16);padding-top:22px}
+.mb-hero-stat b{display:block;font-size:1.7rem;color:var(--mb-gold);font-weight:800;letter-spacing:.01em}
+.mb-hero-stat span{font-size:.8rem;color:#9fb0bc;letter-spacing:.05em}
+.mb-hero-art{position:relative}
+.mb-hero-art img{border-radius:18px;box-shadow:0 24px 60px rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.12)}
+.mb-hero-art-badge{
+  position:absolute;left:-16px;bottom:22px;background:var(--mb-paper);color:var(--mb-ink);
+  border-radius:12px;padding:10px 16px;font-size:.8rem;font-weight:700;box-shadow:var(--mb-shadow);
+  display:flex;align-items:center;gap:9px;
+}
+.mb-hero-art-badge i{width:9px;height:9px;border-radius:50%;background:#d9534f;display:inline-block;animation:mbPulse 1.6s infinite}
+@keyframes mbPulse{0%,100%{opacity:1}50%{opacity:.25}}
+.mb-hero-marquee{margin-top:44px;border-top:1px solid rgba(255,255,255,.14);padding:14px 0;overflow:hidden;white-space:nowrap;position:relative;z-index:2}
+.mb-hero-marquee-track{display:inline-flex;gap:34px;font-size:.82rem;color:#93a5b1;animation:mbScroll 38s linear infinite}
+.mb-hero-marquee-track span b{color:var(--mb-gold);font-weight:700}
+@keyframes mbScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ===== 焦点区：一大三小 ===== */
+.mb-focus-grid{display:grid;grid-template-columns:7fr 5fr;gap:26px;align-items:start}
+.mb-focus-main{background:var(--mb-white);border-radius:var(--mb-radius);overflow:hidden;box-shadow:var(--mb-shadow);display:flex;flex-direction:column}
+.mb-focus-main .mb-cover{position:relative;aspect-ratio:16/9}
+.mb-cover img{width:100%;height:100%;object-fit:cover}
+.mb-cover-play{
+  position:absolute;inset:0;margin:auto;width:64px;height:64px;border-radius:50%;
+  background:rgba(255,253,248,.92);display:grid;place-items:center;color:var(--mb-ink);
+  box-shadow:0 8px 24px rgba(0,0,0,.25);transition:.22s;
+}
+.mb-focus-main:hover .mb-cover-play,.mb-video-card:hover .mb-cover-play{transform:scale(1.1);background:var(--mb-gold)}
+.mb-cover-play svg{width:24px;height:24px;margin-left:3px}
+.mb-focus-body{padding:22px 24px 24px}
+.mb-focus-body h3{font-size:1.32rem;margin-bottom:.4em}
+.mb-focus-body p{color:var(--mb-muted);font-size:.92rem}
+.mb-meta{display:flex;flex-wrap:wrap;align-items:center;gap:14px;font-size:.78rem;color:var(--mb-muted);margin-top:12px}
+.mb-meta b{color:var(--mb-ink);font-weight:700}
+.mb-focus-side{display:flex;flex-direction:column;gap:14px}
+.mb-focus-item{
+  background:var(--mb-white);border:1px solid var(--mb-line);border-radius:12px;padding:15px 17px;
+  display:grid;grid-template-columns:auto 1fr;gap:14px;transition:.22s;
+}
+.mb-focus-item:hover{border-color:var(--mb-gold);transform:translateX(4px);box-shadow:0 8px 20px rgba(18,32,46,.08)}
+.mb-focus-num{font-size:1.5rem;font-weight:800;color:var(--mb-line);line-height:1;font-family:Georgia,serif}
+.mb-focus-item:hover .mb-focus-num{color:var(--mb-gold)}
+.mb-focus-item h4{font-size:.98rem;margin-bottom:.25em;color:var(--mb-ink)}
+.mb-focus-item p{font-size:.8rem;color:var(--mb-muted);margin:0}
+
+/* ===== 视频列表（单列图文列表） ===== */
+.mb-video-list{display:flex;flex-direction:column;gap:0}
+.mb-video-row{
+  display:grid;grid-template-columns:56px 1fr auto;gap:18px;align-items:start;
+  padding:22px 0;border-bottom:1px dashed var(--mb-line);transition:.2s;
+}
+.mb-video-row:first-child{padding-top:0}
+.mb-video-row:hover{background:linear-gradient(90deg,rgba(232,163,61,.07),transparent 65%);padding-left:12px;padding-right:12px;border-radius:10px}
+.mb-video-thumb{width:56px;height:56px;border-radius:12px;overflow:hidden;flex-shrink:0}
+.mb-video-thumb img{width:100%;height:100%;object-fit:cover}
+.mb-video-main h3{font-size:1.06rem;margin-bottom:.2em}
+.mb-video-main h3 a:hover{color:var(--mb-teal)}
+.mb-video-main p{font-size:.87rem;color:var(--mb-muted);margin-bottom:.5em}
+.mb-video-tags{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:.3em}
+.mb-video-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.mb-act{
+  display:inline-flex;align-items:center;gap:5px;font-size:.78rem;font-weight:600;color:var(--mb-muted);
+  padding:5px 11px;border-radius:999px;border:1px solid var(--mb-line);background:var(--mb-white);transition:.18s;
+}
+.mb-act:hover{border-color:var(--mb-teal);color:var(--mb-teal)}
+.mb-act.on{background:var(--mb-teal-soft);border-color:var(--mb-teal);color:var(--mb-teal)}
+.mb-act svg{width:13px;height:13px}
+.mb-video-side{font-size:.74rem;color:var(--mb-muted);text-align:right;white-space:nowrap}
+.mb-video-side b{display:block;color:var(--mb-ink);font-size:.92rem}
+
+/* ===== 专题（三卡） ===== */
+.mb-topics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.mb-topic{background:var(--mb-white);border-radius:var(--mb-radius);border:1px solid var(--mb-line);padding:24px;display:flex;flex-direction:column;transition:.22s}
+.mb-topic:hover{transform:translateY(-4px);box-shadow:var(--mb-shadow);border-color:transparent}
+.mb-topic-status{display:inline-flex;align-items:center;gap:6px;font-size:.72rem;font-weight:700;color:var(--mb-teal);margin-bottom:12px}
+.mb-topic-status i{width:7px;height:7px;border-radius:50%;background:var(--mb-teal);display:inline-block}
+.mb-topic-status.soon{color:var(--mb-gold-deep)}
+.mb-topic-status.soon i{background:var(--mb-gold)}
+.mb-topic h3{margin-bottom:.4em}
+.mb-topic > p{font-size:.86rem;color:var(--mb-muted);margin-bottom:16px}
+.mb-topic-list{border-top:1px solid var(--mb-line);padding-top:12px;margin-top:auto;display:flex;flex-direction:column;gap:9px}
+.mb-topic-list a{font-size:.82rem;color:var(--mb-text);display:flex;gap:8px;align-items:baseline;line-height:1.5}
+.mb-topic-list a:hover{color:var(--mb-teal)}
+.mb-topic-list a span{color:var(--mb-gold-deep);font-weight:800;font-size:.72rem;min-width:16px}
+
+/* ===== 关键词解析（长文） ===== */
+.mb-essay{background:var(--mb-white);border-radius:18px;border:1px solid var(--mb-line);padding:clamp(24px,4vw,52px)}
+.mb-essay-lead{font-size:1.03rem;color:var(--mb-ink-2);border-left:4px solid var(--mb-gold);padding-left:18px;margin-bottom:30px}
+.mb-essay-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:34px}
+.mb-essay-grid article p{font-size:.94rem;color:#3c4a56}
+.mb-essay-note{background:var(--mb-paper-2);border-radius:12px;padding:16px 20px;font-size:.86rem;color:var(--mb-muted);margin-top:8px}
+.mb-essay-note b{color:var(--mb-ink)}
+
+/* ===== 作者矩阵（双列简介） ===== */
+.mb-authors{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.mb-author{
+  background:var(--mb-white);border-radius:var(--mb-radius);border:1px solid var(--mb-line);
+  padding:20px;display:grid;grid-template-columns:auto 1fr;gap:16px;transition:.22s;
+}
+.mb-author:hover{border-color:var(--mb-gold);box-shadow:0 8px 22px rgba(18,32,46,.07)}
+.mb-avatar{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:1.15rem;color:#fff;flex-shrink:0;letter-spacing:.02em}
+.mb-author h3{font-size:1rem;margin-bottom:.15em}
+.mb-author .mb-author-field{font-size:.76rem;color:var(--mb-gold-deep);font-weight:700;margin-bottom:6px;display:block}
+.mb-author p{font-size:.83rem;color:var(--mb-muted);margin-bottom:10px}
+.mb-author-meta{display:flex;gap:14px;font-size:.76rem;color:var(--mb-muted);margin-bottom:10px}
+.mb-author-meta b{color:var(--mb-ink)}
+.mb-author-more{font-size:.78rem;font-weight:700;color:var(--mb-teal);display:inline-flex;align-items:center;gap:4px}
+.mb-author-more:hover{text-decoration:underline}
+
+/* ===== 数据榜单 ===== */
+.mb-rank-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.mb-rank-tab{
+  font-size:.84rem;font-weight:700;padding:8px 18px;border-radius:999px;border:1.5px solid var(--mb-line);
+  color:var(--mb-muted);background:var(--mb-white);transition:.18s;
+}
+.mb-rank-tab.active{background:var(--mb-ink);color:#fff;border-color:var(--mb-ink)}
+.mb-rank-tab:hover:not(.active){border-color:var(--mb-teal);color:var(--mb-teal)}
+.mb-rank-list{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--mb-line)}
+.mb-rank-row{
+  display:grid;grid-template-columns:46px 1fr auto;gap:16px;align-items:center;
+  padding:15px 6px;border-bottom:1px solid var(--mb-line);transition:.18s;
+}
+.mb-rank-row:hover{background:var(--mb-white)}
+.mb-rank-no{font-weight:800;font-size:1.08rem;color:var(--mb-muted);font-family:Georgia,serif}
+.mb-rank-row:nth-child(1) .mb-rank-no{color:var(--mb-gold-deep)}
+.mb-rank-row:nth-child(2) .mb-rank-no{color:#8b95a0}
+.mb-rank-row:nth-child(3) .mb-rank-no{color:#b07b4f}
+.mb-rank-info h3{font-size:.96rem;margin-bottom:.1em}
+.mb-rank-info p{font-size:.78rem;color:var(--mb-muted);margin:0}
+.mb-rank-val{font-size:.82rem;font-weight:700;color:var(--mb-teal);white-space:nowrap}
+
+/* ===== 评论（引用摘录 + 短评列表） ===== */
+.mb-quote{
+  background:linear-gradient(135deg,var(--mb-ink) 0%,#223a44 100%);color:#e7edef;border-radius:18px;
+  padding:clamp(26px,4vw,44px);display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:center;margin-bottom:26px;
+}
+.mb-quote-mark{font-size:4.6rem;line-height:.7;color:var(--mb-gold);font-family:Georgia,serif;opacity:.9}
+.mb-quote blockquote{font-size:1.1rem;line-height:1.7;font-weight:600;color:#fff;margin-bottom:12px}
+.mb-quote cite{font-style:normal;font-size:.82rem;color:#9fb0bc}
+.mb-quote cite b{color:var(--mb-gold)}
+.mb-comments{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.mb-comment{background:var(--mb-white);border:1px solid var(--mb-line);border-radius:12px;padding:16px 18px}
+.mb-comment-head{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.mb-comment-avatar{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-size:.85rem;font-weight:800;color:#fff}
+.mb-comment-name{font-size:.86rem;font-weight:700;color:var(--mb-ink)}
+.mb-comment-name span{font-weight:400;color:var(--mb-muted);font-size:.72rem;margin-left:6px}
+.mb-comment p{font-size:.86rem;color:#43515d;margin:0}
+.mb-comment-stars{color:var(--mb-gold);font-size:.78rem;letter-spacing:2px;margin-bottom:6px}
+
+/* ===== 企业动态 / 合作 / FAQ ===== */
+.mb-two-col{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:start}
+.mb-news-list{display:flex;flex-direction:column;gap:0;border-left:2px solid var(--mb-line);padding-left:22px;margin-left:6px}
+.mb-news{position:relative;padding-bottom:24px}
+.mb-news:last-child{padding-bottom:0}
+.mb-news::before{content:"";position:absolute;left:-30px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--mb-white);border:2.5px solid var(--mb-gold)}
+.mb-news time{font-size:.74rem;color:var(--mb-gold-deep);font-weight:700;letter-spacing:.04em}
+.mb-news h3{font-size:.98rem;margin:.2em 0 .3em}
+.mb-news p{font-size:.84rem;color:var(--mb-muted);margin:0}
+.mb-partners{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.mb-partner{
+  border:1px solid var(--mb-line);border-radius:10px;padding:16px 12px;text-align:center;
+  font-size:.84rem;font-weight:700;color:var(--mb-ink-2);background:var(--mb-white);transition:.18s;
+}
+.mb-partner:hover{border-color:var(--mb-gold);color:var(--mb-gold-deep);transform:translateY(-2px)}
+.mb-partner span{display:block;font-size:.7rem;font-weight:400;color:var(--mb-muted);margin-top:2px}
+.mb-faq{margin-top:52px}
+.mb-faq details{border-bottom:1px solid var(--mb-line);padding:16px 4px}
+.mb-faq summary{
+  list-style:none;cursor:pointer;font-weight:700;color:var(--mb-ink);font-size:.96rem;
+  display:flex;justify-content:space-between;align-items:center;gap:16px;
+}
+.mb-faq summary::-webkit-details-marker{display:none}
+.mb-faq summary::after{content:"+";font-size:1.3rem;color:var(--mb-gold-deep);font-weight:400;transition:.2s;flex-shrink:0}
+.mb-faq details[open] summary::after{transform:rotate(45deg)}
+.mb-faq details p{font-size:.88rem;color:var(--mb-muted);margin:10px 0 0}
+
+/* ===== 页脚 ===== */
+.mb-footer{background:var(--mb-ink);color:#a9b7c2;padding:56px 0 26px;font-size:.88rem}
+.mb-footer-top{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:36px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.12)}
+.mb-footer h4{color:#fff;font-size:.95rem;margin-bottom:14px;letter-spacing:.02em}
+.mb-footer li{margin-bottom:9px}
+.mb-footer a:hover{color:var(--mb-gold)}
+.mb-footer-brand p{font-size:.85rem;line-height:1.8;max-width:330px}
+.mb-footer-logo{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.mb-footer-logo b{color:#fff;font-size:1.05rem}
+.mb-footer-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:22px;font-size:.78rem;color:#7f9099}
+.mb-footer-bottom a:hover{color:var(--mb-gold)}
+
+/* ===== 回到顶部 ===== */
+.mb-top{
+  position:fixed;right:22px;bottom:26px;width:46px;height:46px;border-radius:50%;
+  background:var(--mb-ink);color:#fff;display:grid;place-items:center;box-shadow:var(--mb-shadow);
+  opacity:0;visibility:hidden;transform:translateY(12px);transition:.25s;z-index:80;
+}
+.mb-top.show{opacity:1;visibility:visible;transform:translateY(0)}
+.mb-top:hover{background:var(--mb-teal)}
+
+/* ===== Toast ===== */
+.mb-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);background:var(--mb-ink);
+  color:#fff;padding:12px 22px;border-radius:999px;font-size:.86rem;font-weight:600;
+  opacity:0;pointer-events:none;transition:.3s;z-index:99;box-shadow:0 12px 30px rgba(0,0,0,.3);
+}
+.mb-toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* ===== Modal ===== */
+.mb-modal{
+  position:fixed;inset:0;background:rgba(10,18,26,.62);backdrop-filter:blur(3px);
+  display:none;place-items:center;padding:20px;z-index:120;
+}
+.mb-modal.open{display:grid}
+.mb-modal-box{background:var(--mb-white);border-radius:18px;max-width:470px;width:100%;padding:28px;position:relative;box-shadow:0 24px 60px rgba(0,0,0,.35);max-height:86vh;overflow:auto}
+.mb-modal-close{position:absolute;right:14px;top:12px;width:34px;height:34px;border-radius:50%;font-size:1.15rem;color:var(--mb-muted);display:grid;place-items:center}
+.mb-modal-close:hover{background:var(--mb-paper-2);color:var(--mb-ink)}
+.mb-modal-box h3{margin-bottom:.5em}
+.mb-modal-box p{font-size:.88rem;color:var(--mb-muted)}
+.mb-field{display:block;font-size:.8rem;font-weight:700;color:var(--mb-ink);margin:14px 0 6px}
+.mb-modal-box input,.mb-modal-box textarea{
+  width:100%;padding:10px 13px;border-radius:9px;border:1.5px solid var(--mb-line);
+  font-family:inherit;font-size:.88rem;outline:none;background:var(--mb-paper);color:var(--mb-text);
+}
+.mb-modal-box input:focus,.mb-modal-box textarea:focus{border-color:var(--mb-teal);background:#fff}
+.mb-modal-box textarea{min-height:88px;resize:vertical}
+.mb-modal .mb-btn{margin-top:18px;width:100%;justify-content:center}
+.mb-share-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.mb-share-row button{flex:1;min-width:100px;padding:11px;border-radius:9px;border:1.5px solid var(--mb-line);font-size:.84rem;font-weight:700;color:var(--mb-ink);background:var(--mb-paper);transition:.18s}
+.mb-share-row button:hover{border-color:var(--mb-teal);color:var(--mb-teal);background:#fff}
+
+/* ===== 响应式 ===== */
+@media (max-width:980px){
+  .mb-hero-grid{grid-template-columns:1fr;gap:34px}
+  .mb-hero-art{max-width:560px}
+  .mb-focus-grid{grid-template-columns:1fr}
+  .mb-topics{grid-template-columns:1fr 1fr}
+  .mb-essay-grid{grid-template-columns:1fr;gap:22px}
+  .mb-two-col{grid-template-columns:1fr;gap:34px}
+  .mb-footer-top{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  :root{--mb-head-h:104px}
+  .mb-menu-toggle{display:grid;place-items:center;margin-left:auto;order:3}
+  .mb-search{display:none}
+  .mb-nav{
+    display:none;position:absolute;top:100%;left:0;right:0;background:var(--mb-paper);
+    border-bottom:1px solid var(--mb-line);flex-direction:column;align-items:stretch;
+    padding:10px 4vw 18px;gap:2px;box-shadow:0 12px 24px rgba(18,32,46,.12);margin:0;
+  }
+  .mb-nav.open{display:flex}
+  .mb-nav a{padding:11px 12px;border-radius:8px}
+  .mb-header-row{position:relative;flex-wrap:wrap}
+  .mb-video-row{grid-template-columns:1fr;gap:10px}
+  .mb-video-actions{justify-content:flex-start}
+  .mb-video-side{display:flex;gap:16px;text-align:left}
+  .mb-video-side b{display:inline}
+  .mb-authors,.mb-comments,.mb-topics,.mb-partners{grid-template-columns:1fr}
+  .mb-quote{grid-template-columns:1fr;gap:8px}
+  .mb-quote-mark{font-size:3rem}
+  .mb-hero-stats{gap:12px}
+  .mb-hero-stat b{font-size:1.35rem}
+  .mb-footer-top{grid-template-columns:1fr}
+  .mb-announce-text{font-size:.78rem}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- S1 吸顶公告 + 页头 -->
+<div class="mb-sticky">
+  <div class="mb-announce">
+    <div class="mb-wrap mb-announce-row">
+      <span class="mb-announce-badge">官方发布</span>
+      <p class="mb-announce-text">26 号「夜行地图」新增 14 个城市隐藏点位 · <strong>第一百零三站·旧码头天台</strong> 高清正片已上线 · 创作者征集本周日 20:00 截止</p>
+      <a class="mb-announce-link" href="#mb-news">查看更新详情 →</a>
+    </div>
+  </div>
+  <header class="mb-header">
+    <div class="mb-wrap mb-header-row">
+      <a class="mb-logo" href="#mb-top" aria-label="秘密基地导航入口官网首页">
+        <span class="mb-logo-mark">
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="32" cy="29" r="12" fill="none" stroke="#e8a33d" stroke-width="4"/><path d="M32 20v5M32 33v5M23 29h5M36 29h5" stroke="#e8a33d" stroke-width="3" stroke-linecap="round"/><path d="M22 51h20" stroke="#e8a33d" stroke-width="4" stroke-linecap="round"/></svg>
+        </span>
+        <span class="mb-logo-text">
+          <b>秘密基地导航入口</b>
+          <span>Secret Base Portal</span>
+        </span>
+      </a>
+      <button class="mb-menu-toggle" id="mbMenuBtn" aria-label="展开导航菜单" aria-expanded="false">☰</button>
+      <nav class="mb-nav" id="mbNav" aria-label="主导航">
+        <a href="#mb-focus">焦点内容</a>
+        <a href="#mb-videos">精品视频</a>
+        <a href="#mb-topics">专题企划</a>
+        <a href="#mb-authors">创作者</a>
+        <a href="#mb-rank">数据榜单</a>
+        <a href="#mb-faq">帮助中心</a>
+      </nav>
+      <div class="mb-search" role="search">
+        <label for="mbSearchInput" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">搜索内容</label>
+        <input id="mbSearchInput" type="search" placeholder="搜索基地、创作者、专题" autocomplete="off">
+        <button id="mbSearchBtn" aria-label="搜索">
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
+        </button>
+        <div class="mb-search-tip" id="mbSearchTip" role="status"></div>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="mb-top">
+
+  <!-- S2 品牌首屏 6:4 -->
+  <section class="mb-hero" aria-labelledby="mbHeroTitle">
+    <div class="mb-wrap">
+      <div class="mb-hero-grid">
+        <div>
+          <span class="mb-eyebrow">Secret Base Portal · 官方网站</span>
+          <h1 id="mbHeroTitle">秘密基地<em>导航入口</em></h1>
+          <p class="mb-hero-sub">把城市里那些被忽略的角落，拍成你想反复回看的影像。这里是独立创作者与企业共同运营的视频品牌官网，也是所有「秘密基地」的官方发布与导航中心。</p>
+          <p class="mb-hero-intro">作为深耕城市隐藏角落的垂直影像平台，我们以原创、高清、正版为核心，搭建从内容发现到创作者成长的完整内容生态，用真实影像记录多元的城市日常。</p>
+          <div class="mb-hero-actions">
+            <a class="mb-btn mb-btn-gold" href="#mb-videos">进入精品内容库</a>
+            <a class="mb-btn mb-btn-ghost" href="#mb-authors">认识创作者</a>
+            <button class="mb-btn mb-btn-ghost" data-mb-open="submit">我要投稿</button>
+          </div>
+          <div class="mb-hero-stats">
+            <div class="mb-hero-stat"><b data-mb-count="1268">0</b><span>在册基地点位</span></div>
+            <div class="mb-hero-stat"><b data-mb-count="24800">0</b><span>原创高清视频</span></div>
+            <div class="mb-hero-stat"><b data-mb-count="463">0</b><span>签约创作者</span></div>
+          </div>
+        </div>
+        <div class="mb-hero-art">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 560'%3E%3Cdefs%3E%3ClinearGradient id='sky' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%231a2f45'/%3E%3Cstop offset='.55' stop-color='%232b5163'/%3E%3Cstop offset='1' stop-color='%23e8a33d'/%3E%3C/linearGradient%3E%3ClinearGradient id='water' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23c98a34'/%3E%3Cstop offset='1' stop-color='%23223a44'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='720' height='560' fill='url(%23sky)'/%3E%3Ccircle cx='512' cy='236' r='62' fill='%23ffe1a3' opacity='.92'/%3E%3Ccircle cx='512' cy='236' r='98' fill='%23ffd284' opacity='.18'/%3E%3Cpath d='M0 350 L120 286 L208 322 L318 252 L438 316 L556 268 L660 320 L720 292 V420 H0 Z' fill='%2315293a'/%3E%3Crect x='0' y='410' width='720' height='150' fill='url(%23water)'/%3E%3Cg opacity='.5' stroke='%23ffe1a3' stroke-width='3'%3E%3Cpath d='M80 452h96M212 478h130M420 448h140M180 512h180M470 506h150'/%3E%3C/g%3E%3Cg fill='%230d1b26'%3E%3Crect x='60' y='300' width='36' height='112'/%3E%3Crect x='104' y='268' width='24' height='144'/%3E%3Crect x='600' y='286' width='30' height='126'/%3E%3Crect x='638' y='312' width='44' height='100'/%3E%3C/g%3E%3Cg fill='%23ffc65c'%3E%3Crect x='68' y='316' width='6' height='8'/%3E%3Crect x='82' y='340' width='6' height='8'/%3E%3Crect x='108' y='292' width='5' height='7'/%3E%3Crect x='608' y='306' width='5' height='7'/%3E%3Crect x='650' y='336' width='6' height='8'/%3E%3C/g%3E%3Cpath d='M300 410V214h12v196z' fill='%230d1b26'/%3E%3Cpath d='M306 210l-30 26h60z' fill='%23e8a33d'/%3E%3Ccircle cx='306' cy='196' r='9' fill='%23fff3cf'/%3E%3C/svg%3E" alt="秘密基地导航入口首屏主视觉：黄昏旧码头顶楼天台上亮着灯的导航塔与水面倒影" width="720" height="560">
+          <div class="mb-hero-art-badge"><i></i>正在拍摄 · 第 103 站 旧码头天台</div>
+        </div>
+      </div>
+      <div class="mb-hero-marquee" aria-hidden="true">
+        <div class="mb-hero-marquee-track">
+          <span><b>新增</b> 老防空洞改造书店 · 巷尾两平米暗房</span>
+          <span><b>本周热播</b>《关掉导航之后的四十分钟》</span>
+          <span><b>官方企划</b>「城市留白」第二季征集中</span>
+          <span><b>新增</b> 老防空洞改造书店 · 巷尾两平米暗房</span>
+          <span><b>本周热播</b>《关掉导航之后的四十分钟》</span>
+          <span><b>官方企划</b>「城市留白」第二季征集中</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- M2 焦点内容：一大三小 -->
+  <section class="mb-section" id="mb-focus" aria-labelledby="mbFocusTitle">
+    <div class="mb-wrap">
+      <div class="mb-sec-head">
+        <div>
+          <span class="mb-eyebrow">Focus · 官方精选</span>
+          <h2 id="mbFocusTitle">今日焦点：把秘密基地导航入口交给一双陌生的脚</h2>
+          <p>编辑部每天从投稿中挑出一部正片与三条值得点开的短片，重点呈现本季城市探索方向上的精品内容。</p>
+        </div>
+        <a class="mb-btn mb-btn-line" href="#mb-videos">全部精品内容</a>
+      </div>
+      <div class="mb-focus-grid">
+        <article class="mb-focus-main">
+          <div class="mb-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23233d4a'/%3E%3Cstop offset='1' stop-color='%235d7a74'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23f1)'/%3E%3Cg stroke='%23dfe9e4' stroke-width='2' opacity='.55' fill='none'%3E%3Cpath d='M40 380h180l40-90 44 34 70-150 60 96 46-52 88 162'/%3E%3Ccircle cx='370' cy='174' r='9' fill='%23e8a33d' stroke='none'/%3E%3Ccircle cx='460' cy='160' r='6' fill='%23dfe9e4' stroke='none'/%3E%3C/g%3E%3Cg fill='%23121f2a'%3E%3Crect x='560' y='250' width='70' height='130'/%3E%3Crect x='650' y='284' width='90' height='96'/%3E%3Crect x='100' y='266' width='90' height='114'/%3E%3C/g%3E%3Cg fill='%23e8a33d'%3E%3Crect x='574' y='266' width='10' height='12'/%3E%3Crect x='596' y='266' width='10' height='12'/%3E%3Crect x='574' y='296' width='10' height='12'/%3E%3Crect x='666' y='300' width='9' height='11'/%3E%3Crect x='692' y='300' width='9' height='11'/%3E%3Crect x='114' y='284' width='9' height='11'/%3E%3C/g%3E%3Cpath d='M300 450V120' stroke='%23dfe9e4' stroke-width='3' opacity='.7'/%3E%3Cpath d='M300 120l-60 40h120z' fill='%23e8a33d'/%3E%3Crect x='0' y='400' width='800' height='50' fill='%23121f2a' opacity='.86'/%3E%3C/svg%3E" alt="焦点视频封面：手绘风格的城市天台上被标注出的三条秘密基地导航路线" width="800" height="450">
+            <span class="mb-cover-play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          </div>
+          <div class="mb-focus-body">
+            <div class="mb-video-tags"><span class="mb-tag">城市探索</span><span class="mb-tag">深度测评</span><span class="mb-tag">正片</span></div>
+            <h3>《关掉导航之后的四十分钟》：在天台找到第三个入口</h3>
+            <p>创作者阿枢用一台手持相机记录了从地铁口到旧码头天台的完整路径，中间包含两次错路、一次被门卫拦下，以及最终抵达时的那声「原来在这里」。这条视频把秘密基地导航入口的意义，拍成了一段可以被复现的行走方法。</p>
+            <div class="mb-meta">
+              <span>作者 <b>阿枢</b></span><span>时长 <b>12:48</b></span><span>播放 <b>82,410</b></span><span>点赞 <b>6,942</b></span>
+            </div>
+            <div class="mb-video-actions" style="justify-content:flex-start;margin-top:16px">
+              <button class="mb-act" data-mb-like aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.6-7 9-7 9z"/></svg><span>点赞</span></button>
+              <button class="mb-act" data-mb-fav aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4l2.4 5 5.6.8-4 3.9 1 5.5-5-2.7-5 2.7 1-5.5-4-3.9 5.6-.8z"/></svg><span>收藏</span></button>
+              <button class="mb-act" data-mb-open="share">分享</button>
+              <button class="mb-act" data-mb-open="report">反馈</button>
+            </div>
+          </div>
+        </article>
+        <div class="mb-focus-side">
+          <article class="mb-focus-item">
+            <span class="mb-focus-num">01</span>
+            <div>
+              <h4>巷尾两平米暗房：把冲洗照片做成导航坐标</h4>
+              <p>经验分享 · 7:12 · 播放 41,208</p>
+            </div>
+          </article>
+          <article class="mb-focus-item">
+            <span class="mb-focus-num">02</span>
+            <div>
+              <h4>防空洞里的旧书店，为什么值得专门跑一趟</h4>
+              <p>在地文化 · 9:35 · 播放 37,664</p>
+            </div>
+          </article>
+          <article class="mb-focus-item">
+            <span class="mb-focus-num">03</span>
+            <div>
+              <h4>从 0 开始给一条路线做配乐：创作幕后全记录</h4>
+              <p>创作幕后 · 15:02 · 播放 29,881</p>
+            </div>
+          </article>
+          <article class="mb-focus-item" style="background:var(--mb-paper-2);border-style:dashed">
+            <span class="mb-focus-num">＋</span>
+            <div>
+              <h4>你有自己的秘密基地吗？</h4>
+              <p>官方征集通道已开启，投稿通过的路线将进入导航入口正式名单。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 精品视频（单列图文列表） -->
+  <section class="mb-section" id="mb-videos" aria-labelledby="mbVideoTitle">
+    <div class="mb-wrap">
+      <div class="mb-sec-head">
+        <div>
+          <span class="mb-eyebrow">Premium · 精品内容库</span>
+          <h2 id="mbVideoTitle">秘密基地导航入口本周精品视频</h2>
+          <p>六条由官方与企业创作者联合出品的原创高清内容，覆盖路线攻略、深度测评与创作者访谈，支持点赞、收藏与分享。</p>
+        </div>
+        <span class="mb-tag">每周四 20:00 更新</span>
+      </div>
+      <div class="mb-video-list">
+
+        <article class="mb-video-row">
+          <div class="mb-video-thumb"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 112 112'%3E%3Crect width='112' height='112' fill='%232f6d6a'/%3E%3Cpath d='M18 76h76' stroke='%23d9e7e4' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M28 76V42l28-16 28 16v34' fill='none' stroke='%23d9e7e4' stroke-width='4' stroke-linejoin='round'/%3E%3Crect x='46' y='56' width='20' height='20' fill='%23e8a33d'/%3E%3C/svg%3E" alt="视频封面：绿色调的老屋门洞与走廊尽头透出的光" width="112" height="112"></div>
+          <div class="mb-video-main">
+            <h3><a href="#mb-videos">《门洞另一侧》· 老城区 7 个可进入的隐秘通道测评</a></h3>
+            <p>花了两个周末实测 7 个入口，其中 3 个已经封死。视频里给出通行时间、需要避开的时段，以及一个几乎没人知道的侧门。</p>
+            <div class="mb-video-tags"><span class="mb-tag">深度测评</span><span class="mb-tag">实用技巧</span></div>
+            <div class="mb-video-actions">
+              <button class="mb-act" data-mb-like aria-pressed="false">♥ <span>点赞</span></button>
+              <button class="mb-act" data-mb-fav aria-pressed="false">☆ <span>收藏</span></button>
+              <button class="mb-act" data-mb-open="share">分享</button>
+              <button class="mb-act" data-mb-open="submit">投稿同款</button>
+            </div>
+          </div>
+          <div class="mb-video-side"><b>13:26</b>播放 68,302</div>
+        </article>
+
+        <article class="mb-video-row">
+          <div class="mb-video-thumb"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 112 112'%3E%3Crect width='112' height='112' fill='%23e8a33d'/%3E%3Ccircle cx='56' cy='46' r='20' fill='none' stroke='%2312202e' stroke-width='5'/%3E%3Cpath d='M56 20v8M56 64v8M30 46h8M74 46h8' stroke='%2312202e' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M32 92h48' stroke='%2312202e' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E" alt="视频封面：琥珀色背景上的圆形导航罗盘图标" width="112" height="112"></div>
+          <div class="mb-video-main">
+            <h3><a href="#mb-videos">给新手的第一份导航攻略：怎么判断一个地方能不能拍</a></h3>
+            <p>光线、噪声、人流量、权属，四个维度做成了一张可打印的检查表。评论区已有人按这套方法成功拍到了自己的第一个基地。</p>
+            <div class="mb-video-tags"><span class="mb-tag">教程干货</span><span class="mb-tag">攻略</span></div>
+            <div class="mb-video-actions">
+              <button class="mb-act" data-mb-like aria-pressed="false">♥ <span>点赞</span></button>
+              <button class="mb-act" data-mb-fav aria-pressed="false">☆ <span>收藏</span></button>
+              <button class="mb-act" data-mb-open="share">分享</button>
+            </div>
+          </div>
+          <div class="mb-video-side"><b>08:44</b>播放 51,774</div>
+        </article>
+
+        <article class="mb-video-row">
+          <div class="mb-video-thumb"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 112 112'%3E%3Crect width='112' height='112' fill='%23223a44'/%3E%3Crect x='20' y='30' width='72' height='52' rx='6' fill='none' stroke='%23dfe9e4' stroke-width='4'/%3E%3Cpath d='M20 52h72' stroke='%23dfe9e4' stroke-width='3'/%3E%3Ccircle cx='38' cy='42' r='5' fill='%23e8a33d'/%3E%3C/svg%3E" alt="视频封面：深蓝灰色的影像剪辑时间轴示意画" width="112" height="112"></div>
+          <div class="mb-video-main">
+            <h3><a href="#mb-videos">创作者访谈：我用三年时间给城市画了一张暗门地图</a></h3>
+            <p>从纸质手账到可交互地图，阿枝聊了聊她如何说服 40 多位陌生人带她去看自己心里的秘密基地，以及拍摄中那些必须放弃的镜头。</p>
+            <div class="mb-video-tags"><span class="mb-tag">人物访谈</span><span class="mb-tag">品牌故事</span></div>
+            <div class="mb-video-actions">
+              <button class="mb-act" data-mb-like aria-pressed="false">♥ <span>点赞</span></button>
+              <button class="mb-act" data-mb-fav aria-pressed="false">☆ <span>收藏</span></button>
+              <button class="mb-act" data-mb-open="share">分享</button>
+            </div>
+          </div>
+          <div class="mb-video-side"><b>21:06</b>播放 44,190</div>
+        </article>
+
+        <article class="mb-video-row">
+          <div class="mb-video-thumb"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 112 112'%3E%3Crect width='112' height='112' fill='%233c5a4e'/%3E%3Cpath d='M56 92V44' stroke='%23d9e7e4' stroke-width='4'/%3E%3Cpath d='M56 44c-16 0-24-12-24-24 16 0 24 12 24 24zM56 56c16 0 24-12 24-24-16 0-24 12-24 24z' fill='%23c9dbb7'/%3E%3C/svg%3E" alt="视频封面：自然绿背景上的两片对称叶子插画" width="112" height="112"></div>
+          <div class="mb-video-main">
+            <h3><a href="#mb-videos">天台上的春天：给一个荒废屋顶做 30 天影像记录</a></h3>
+            <p>固定机位延时摄影加每周一次的现场收音，记录了废弃天台上第一株植物、第二只猫，以及第七个把这里当成午睡地点的上班族。</p>
+            <div class="mb-video-tags"><span class="mb-tag">日常记录</span><span class="mb-tag">治愈影像</span></div>
+            <div class="mb-video-actions">
+              <button class="mb-act" data-mb-like aria-pressed="false">♥ <span>点赞</span></button>
+              <button class="mb-act" data-mb-fav aria-pressed="false">☆ <span>收藏</span></button>
+              <button class="mb-act" data-mb-open="share">分享</button>
+            </div>
+          </div>
+          <div class="mb-video-side"><b>11:19</b>播放 39,528</div>
+        </article>
+
+        <article class="mb-video-row">
+          <div class="mb-video-thumb"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 112 112'%3E%3Crect width='112' height='112' fill='%235d4a6b'/%3E%3Ccircle cx='56' cy='50' r='22' fill='none' stroke='%23e6dbef' stroke-width='4'/%3E%3Cpath d='M56 28v10M56 62v10M34 50h10M68 50h10' stroke='%23e8a33d' stroke-width='3.5' stroke-linecap='round'/%3E%3Ccircle cx='56' cy='50' r='5' fill='%23e8a33d'/%3E%3C/svg%3E" alt="视频封面：柔和紫灰色背景上的定位准星图形" width="112" height="112"></div>
+          <div class="mb-video-main">
+            <h3><a href="#mb-videos">夜行地图实测：这条路线在晚上十一点之后才成立</a></h3>
+            <p>白天走一遍完全普通，夜里却处处是入口。团队用三台机位同步拍摄，给出了白天与夜晚的对照版路线说明。</p>
+            <div class="mb-video-tags"><span class="mb-tag">城市探索</span><span class="mb-tag">在地文化</span></div>
+            <div class="mb-video-actions">
+              <button class="mb-act" data-mb-like aria-pressed="false">♥ <span>点赞</span></button>
+              <button class="mb-act" data-mb-fav aria-pressed="false">☆ <span>收藏</span></button>
+              <button class="mb-act" data-mb-open="share">分享</button>
+            </div>
+          </div>
+          <div class="mb-video-side"><b>16:40</b>播放 33,915</div>
+        </article>
+
+        <article class="mb-video-row">
+          <div class="mb-video-thumb"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 112 112'%3E%3Crect width='112' height='112' fill='%23b4543f'/%3E%3Crect x='24' y='40' width='64' height='44' rx='4' fill='none' stroke='%23ffe9dd' stroke-width='4'/%3E%3Cpath d='M24 54h64M40 40v44M64 40v44' stroke='%23ffe9dd' stroke-width='3'/%3E%3C/svg%3E" alt="视频封面：砖红色背景上的胶片画格示意图形" width="112" height="112"></div>
+          <div class="mb-video-main">
+            <h3><a href="#mb-videos">胶片与数码的同一座天桥：一次公开的对照测评</a></h3>
+            <p>同一机位、同一时段，两台设备各拍 200 张。结论有点意外：真正决定画面气质的不是器材，而是你站在天桥的哪一侧。</p>
+            <div class="mb-video-tags"><span class="mb-tag">深度测评</span><span class="mb-tag">艺术美学</span></div>
+            <div class="mb-video-actions">
+              <button class="mb-act" data-mb-like aria-pressed="false">♥ <span>点赞</span></button>
+              <button class="mb-act" data-mb-fav aria-pressed="false">☆ <span>收藏</span></button>
+              <button class="mb-act" data-mb-open="share">分享</button>
+            </div>
+          </div>
+          <div class="mb-video-side"><b>14:08</b>播放 27,640</div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- M4 专题企划 -->
+  <section class="mb-section" id="mb-topics" aria-labelledby="mbTopicTitle">
+    <div class="mb-wrap">
+      <div class="mb-sec-head">
+        <div>
+          <span class="mb-eyebrow">Series · 专题企划</span>
+          <h2 id="mbTopicTitle">三个持续更新的专题，构成秘密基地导航入口的内容主轴</h2>
+          <p>专题由官方编辑部发起，创作者自由报名参与，每季结束后整理成公开的高清合集，长期在官网可看。</p>
+        </div>
+      </div>
+      <div class="mb-topics">
+        <article class="mb-topic">
+          <span class="mb-topic-status"><i></i>更新中 · 第 2 季</span>
+          <h3>城市留白</h3>
+          <p>寻找那些地图上没有名字、却被人反复使用的小空间。每期一部正片、一份可复现的路线卡。</p>
+          <div class="mb-topic-list">
+            <a href="#mb-videos"><span>01</span>天台上的春天：30 天屋顶影像记录</a>
+            <a href="#mb-videos"><span>02</span>高架桥下的第三个黄昏</a>
+            <a href="#mb-videos"><span>03</span>一间没有招牌的修表铺</a>
+          </div>
+        </article>
+        <article class="mb-topic">
+          <span class="mb-topic-status soon"><i></i>已完结 · 共 12 集</span>
+          <h3>暗门手册</h3>
+          <p>与城市研究者合作，把散落在创作者手中的入口信息整理成结构化的攻略合集，全部标注拍摄建议。</p>
+          <div class="mb-topic-list">
+            <a href="#mb-videos"><span>01</span>老城区 7 个可进入的隐秘通道</a>
+            <a href="#mb-videos"><span>02</span>夜行地图：十一点之后的路线</a>
+            <a href="#mb-videos"><span>03</span>被忽略的 5 个地下入口</a>
+          </div>
+        </article>
+        <article class="mb-topic">
+          <span class="mb-topic-status"><i></i>征集中 · 报名开放</span>
+          <h3>带我去你的基地</h3>
+          <p>创作者互相探访对方心里的秘密基地，全程一镜跟拍。报名用户将获得官方拍摄与剪辑支持。</p>
+          <div class="mb-topic-list">
+            <a href="#mb-videos"><span>01</span>阿枢带阿枝去看他的第三个入口</a>
+            <a href="#mb-videos"><span>02</span>凌晨四点的早餐摊与它的常客</a>
+            <a href="#mb-videos"><span>03</span>一群人的共同基地：旧仓库排练厅</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- M15 关键词深度解析（≥800字） -->
+  <section class="mb-section" id="mb-essay" aria-labelledby="mbEssayTitle">
+    <div class="mb-wrap">
+      <div class="mb-sec-head">
+        <div>
+          <span class="mb-eyebrow">Insight · 品牌深度解析</span>
+          <h2 id="mbEssayTitle">我们如何理解「秘密基地导航入口」这件事</h2>
+          <p>一篇来自品牌编辑部的长文，说明这个平台的判断标准、内容伦理与长期方向。</p>
+        </div>
+      </div>
+      <div class="mb-essay">
+        <p class="mb-essay-lead">秘密基地导航入口并不是一个真正意义上的地图产品。地图追求的是最短路径与最高效率，而我们想做的恰恰相反：让人愿意绕路、愿意多走十分钟、愿意在一个没有名字的地方停下来。作为官方网站，我们把这套判断写在这里，作为对所有创作者与企业合作方的公开说明。</p>
+        <div class="mb-essay-grid">
+          <article>
+            <h3>为什么叫「秘密基地」，又为什么要做「导航入口」</h3>
+            <p>「秘密基地」这个词来自童年。它不必宏大，可能只是楼后的一截矮墙、写字楼里没有人的消防通道、便利店二楼靠窗的位置。它之所以成立，是因为使用者赋予了它一种私人意义——这是我和别人的差别，也是我和这座城市的默契。而「导航入口」则是这份私密感的公共出口：我们不做大规模曝光，而是提供一层温和的引导，让有兴趣的人可以按图索骥，同时保留发现时的惊喜。</p>
+            <p>平台在运营上有一条明确原则：所有公开显示的基地点位，必须得到空间使用者或管理方的理解。这条原则看着简单，执行起来成本很高。我们为此建立了一套内部核实流程，每一条进入导航入口正式名单的路线，都需要至少一次现场确认与一次拍摄许可记录。这也是为什么官网上的点位增长看起来很慢——三年时间，在册基地点位数只有一千多个，但它意味着每一个都可以被放心前往。</p>
+            <p>对企业合作方，我们的要求同样具体。品牌植入不能改变路线本身的推荐逻辑，不能因为商业合作把一个普通入口描述成「必去」。我们更愿意用企业共创的方式，让品牌成为内容的支持者而不是判断者，比如提供器材、场地开放、后期资源，而不是直接决定拍摄对象。这种坚持让平台在商业化上走得不算快，但换来了创作者与用户的长期信任。</p>
+          </article>
+          <article>
+            <h3>内容标准：一条合格的基地视频应该具备什么</h3>
+            <p>我们内部把一条合格的基地视频拆成四层。第一层是可复现性：观众看完之后，应该能大致知道自己该怎么去、什么时间去、需要注意什么。这也是「导航入口」四个字最直接的含义。第二层是拍摄诚实度：不美化危险，不隐瞒限制，不把需要翻越围栏的地方剪成轻松进入。第三层是人物在场：好的基地视频里一定有人的痕迹，哪怕只是一个坐在台阶上抽烟的陌生人。第四层是留白：不把话说满，让观众自己产生出发的冲动。</p>
+            <p>基于这四层标准，官方编辑部每周对投稿进行筛选。通过初审的内容会进入创作者辅导阶段，编辑会给出具体的修改建议，比如补一个入口镜头、把嘈杂的现场音处理干净、或者删掉一段不必要的旁白。这个流程被不少创作者称为「最啰嗦但最有用」的环节，也正是秘密基地导航入口区别于普通视频聚合平台的地方。我们不追求数量上的繁荣，而更在意每一条内容是否经得起回看。</p>
+            <p>在技术层面，官网对所有正片提供高清播放与稳定的下载入口，方便创作者二次剪辑时作为参考素材；对图文内容则保留原始比例，不裁切构图。这些细节看起来琐碎，但直接影响创作者是否愿意把这个平台当成自己的工作台，而不只是一个发布渠道。</p>
+          </article>
+          <article>
+            <h3>社区与创作者：一个持续运营的内容生态</h3>
+            <p>平台的创作者结构相对分散：有全职做城市纪录的独立影像作者，有下班后拍片的上班族，也有地方文化机构与企业内容团队。为了照顾这种多元性，我们在社区机制上做了分层：新人可以通过投稿入口提交第一条路线，审核通过后会获得基础流量支持；稳定更新的创作者可以申请成为签约作者，获得设备借用与选题共创的机会；企业创作者则通过专题合作参与长期项目。</p>
+            <p>这种分层并不是等级制度，而是为了让不同阶段的人都能找到合适的节奏。我们每年会举办两次公开的城市影像挑战，参与者需要在限定时间内完成一条包含完整导航信息的短片。比赛不设高额奖金，但会把优秀作品放进官网首页的长期展区，并提供与品牌合作拍摄的机会。过去几季的经验说明，创作者真正在意的是被认真对待，而不是一次性的曝光。</p>
+            <p>评论区的氛围同样是长期运营的结果。我们不放任情绪化表达，也不做过度删帖，而是通过置顶高质量评论、鼓励补充路线信息的方式，把讨论拉回内容本身。很多实用的入口细节，其实来自评论区用户的补充，这些补充随后会被编辑整理进正式路线卡中。这种从社区回到内容的循环，是秘密基地导航入口最看重的资产。</p>
+          </article>
+          <article>
+            <h3>长期方向：让发现这件事保持体面</h3>
+            <p>我们清楚平台影响力扩大之后的风险：一个地方被拍得太多，就会失去它作为秘密基地的属性。因此在产品设计上，我们刻意做了几处限制——部分点位只提供模糊区域提示，部分路线仅在特定季节开放查看，热门内容也不会被无限次推荐。这些限制会牺牲一部分流量，但能让这些空间活得更久。</p>
+            <p>未来一年，官网会重点完善三件事：一是路线卡的标准化，让每一条内容都附带完整的时间、交通、拍摄建议；二是创作者支持计划，把设备、场地与后期资源更公平地分配；三是与企业合作方的共创规范，把商业合作对内容判断的影响降到最低。我们希望秘密基地导航入口最终成为一个可以被信赖的参考系：当你想认真地看看自己生活的城市，会想到先来这里。</p>
+            <div class="mb-essay-note"><b>编辑部说明：</b>本文所述标准与流程自平台上线起持续执行，相关细则会在每年的企业动态中公开更新，欢迎创作者与用户在反馈通道提出意见。</div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- M5 创作者矩阵（双列简介） -->
+  <section class="mb-section" id="mb-authors" aria-labelledby="mbAuthorTitle">
+    <div class="mb-wrap">
+      <div class="mb-sec-head">
+        <div>
+          <span class="mb-eyebrow">Creators · 创作者矩阵</span>
+          <h2 id="mbAuthorTitle">秘密基地导航入口的六位常驻创作者</h2>
+          <p>他们来自不同城市与职业，共同点是都愿意为一条路线反复走很多遍。点击可查看完整档案。</p>
+        </div>
+      </div>
+      <div class="mb-authors">
+        <article class="mb-author">
+          <div class="mb-avatar" style="background:#2f6d6a">枢</div>
+          <div>
+            <h3>阿枢</h3>
+            <span class="mb-author-field">城市探索 · 路线设计</span>
+            <div class="mb-author-meta"><span>作品 <b>86</b></span><span>粉丝 <b>12.4 万</b></span></div>
+            <p>前地图数据工程师，现全职拍摄城市路径。习惯先走三遍再开机，认为一条好路线比一个漂亮镜头更重要。代表作《关掉导航之后的四十分钟》。</p>
+            <button class="mb-author-more" data-mb-open="author" data-mb-name="阿枢" data-mb-field="城市探索 · 路线设计">查看创作者档案 →</button>
+          </div>
+        </article>
+        <article class="mb-author">
+          <div class="mb-avatar" style="background:#b4543f">枝</div>
+          <div>
+            <h3>阿枝</h3>
+            <span class="mb-author-field">人物访谈 · 在地文化</span>
+            <div class="mb-author-meta"><span>作品 <b>64</b></span><span>粉丝 <b>9.8 万</b></span></div>
+            <p>做了三年城市暗门地图，擅长和陌生人聊天。她的访谈很少打断对方，镜头也常常停在对方沉默的那几秒，被观众称为「最有耐心的拍摄者」。</p>
+            <button class="mb-author-more" data-mb-open="author" data-mb-name="阿枝" data-mb-field="人物访谈 · 在地文化">查看创作者档案 →</button>
+          </div>
+        </article>
+        <article class="mb-author">
+          <div class="mb-avatar" style="background:#3c5a4e">野</div>
+          <div>
+            <h3>野渡</h3>
+            <span class="mb-author-field">日常记录 · 治愈影像</span>
+            <div class="mb-author-meta"><span>作品 <b>112</b></span><span>粉丝 <b>15.6 万</b></span></div>
+            <p>固定机位延时摄影爱好者，喜欢用极长的时间换极短的画面。拍摄过一整年的阳台、三个月的天台与一场持续四小时的雨，作品节奏缓慢但黏性极高。</p>
+            <button class="mb-author-more" data-mb-open="author" data-mb-name="野渡" data-mb-field="日常记录 · 治愈影像">查看创作者档案 →</button>
+          </div>
+        </article>
+        <article class="mb-author">
+          <div class="mb-avatar" style="background:#5d4a6b">迟</div>
+          <div>
+            <h3>迟野</h3>
+            <span class="mb-author-field">深度测评 · 器材技术</span>
+            <div class="mb-author-meta"><span>作品 <b>49</b></span><span>粉丝 <b>7.2 万</b></span></div>
+            <p>器材测评出身，后来把测评对象换成了空间。擅长做对照实验，同一机位拍上百次只为比较一个参数。内容数据量大，但讲解清楚，是很多新人的入门参考。</p>
+            <button class="mb-author-more" data-mb-open="author" data-mb-name="迟野" data-mb-field="深度测评 · 器材技术">查看创作者档案 →</button>
+          </div>
+        </article>
+        <article class="mb-author">
+          <div class="mb-avatar" style="background:#c57f1a">禾</div>
+          <div>
+            <h3>禾见</h3>
+            <span class="mb-author-field">创作幕后 · 剪辑思路</span>
+            <div class="mb-author-meta"><span>作品 <b>73</b></span><span>粉丝 <b>11.1 万</b></span></div>
+            <p>剪辑师出身，习惯把幕后过程完整公开：素材如何筛、配乐怎么选、哪一段必须删掉。她的教程常常直接给出工程文件思路，被同行称作「不藏私的创作者」。</p>
+            <button class="mb-author-more" data-mb-open="author" data-mb-name="禾见" data-mb-field="创作幕后 · 剪辑思路">查看创作者档案 →</button>
+          </div>
+        </article>
+        <article class="mb-author">
+          <div class="mb-avatar" style="background:#2d4a63">岸</div>
+          <div>
+            <h3>岸上</h3>
+            <span class="mb-author-field">行业观察 · 文化访谈</span>
+            <div class="mb-author-meta"><span>作品 <b>38</b></span><span>粉丝 <b>6.5 万</b></span></div>
+            <p>媒体从业十年，转向视频后专注城市文化议题。擅长把碎片化的现场串成结构清晰的长篇，作品常被高校课程引用，也是平台专题企划的长期合作者。</p>
+            <button class="mb-author-more" data-mb-open="author" data-mb-name="岸上" data-mb-field="行业观察 · 文化访谈">查看创作者档案 →</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- M14 数据榜单（标签筛选） -->
+  <section class="mb-section" id="mb-rank" aria-labelledby="mbRankTitle">
+    <div class="mb-wrap">
+      <div class="mb-sec-head">
+        <div>
+          <span class="mb-eyebrow">Rank · 数据榜单</span>
+          <h2 id="mbRankTitle">秘密基地导航入口本周热度、新人与口碑榜</h2>
+          <p>榜单按周更新，数据来自播放、收藏、评论补充信息与编辑推荐加权，不单独以播放量排序。</p>
+        </div>
+      </div>
+      <div class="mb-rank-tabs" role="tablist" aria-label="榜单切换">
+        <button class="mb-rank-tab active" data-mb-tab="hot" role="tab" aria-selected="true">热度榜</button>
+        <button class="mb-rank-tab" data-mb-tab="new" role="tab" aria-selected="false">新人榜</button>
+        <button class="mb-rank-tab" data-mb-tab="praise" role="tab" aria-selected="false">口碑榜</button>
+      </div>
+      <div class="mb-rank-list" data-mb-panel="hot">
+        <div class="mb-rank-row"><span class="mb-rank-no">01</span><div class="mb-rank-info"><h3>《门洞另一侧》· 老城区 7 个可进入的隐秘通道测评</h3><p>阿枢 · 深度测评 · 收藏 9,420</p></div><span class="mb-rank-val">68,302 播放</span></div>
+        <div class="mb-rank-row"><span class="mb-rank-no">02</span><div class="mb-rank-info"><h3>给新手的第一份导航攻略：怎么判断一个地方能不能拍</h3><p>禾见 · 教程干货 · 收藏 8,116</p></div><span class="mb-rank-val">51,774 播放</span></div>
+        <div class="mb-rank-row"><span class="mb-rank-no">03</span><div class="mb-rank-info"><h3>创作者访谈：我用三年时间给城市画了一张暗门地图</h3><p>阿枝 · 人物访谈 · 收藏 6,905</p></div><span class="mb-rank-val">44,190 播放</span></div>
+        <div class="mb-rank-row"><span class="mb-rank-no">04</span><div class="mb-rank-info"><h3>天台上的春天：给一个荒废屋顶做 30 天影像记录</h3><p>野渡 · 治愈影像 · 收藏 6,233</p></div><span class="mb-rank-val">39,528 播放</span></div>
+        <div class="mb-rank-row"><span class="mb-rank-no">05</span><div class="mb-rank-info"><h3>夜行地图实测：这条路线在晚上十一点之后才成立</h3><p>迟野 · 城市探索 · 收藏 5,470</p></div><span class="mb-rank-val">33,915 播放</span></div>
+        <div class="mb-rank-row"><span class="mb-rank-no">06</span><div class="mb-rank-info"><h3>胶片与数码的同一座天桥：一次公开的对照测评</h3><p>岸上 · 艺术美学 · 收藏 4,982</p></div><span class="mb-rank-val">27,640 播放</span></div>
+      </div>
+      <div class="mb-rank-list" data-mb-panel="new" hidden>
+        <div class="mb-rank-row"><span class="mb-rank-no">01</span><div class="mb-rank-info"><h3>我在便利店二楼发现了一个可以坐很久的位置</h3><p>小满 · 日常记录 · 入站 12 天</p></div><span class="mb-rank-val">新人 +387%</span></div>
+        <div class="mb-rank-row"><span class="mb-rank-no">02</span><div class="mb-rank-info"><h3>旧厂房改的工作室，门口没有任何标识</h3><p>南风窗 · 在地文化 · 入站 21 天</p></div><span class="mb-rank-val">新人 +264%</span></div>
+        <div class="mb-rank-row"><span class="mb-rank-no">03</span><div class="mb-rank-info"><h3>用一台旧手机拍出能进精选的基地短片</h3><p>十七 · 教程干货 · 入站 9 天</p></div><span class="mb-rank-val">新人 +221%</span></div>
+        <div class="mb-rank-row"><span class="mb-rank-no">04</span><div class="mb-rank-info"><h3>巷子尽头的修鞋摊，师傅在这里坐了二十年</h3><p>竹里 · 人物访谈 · 入站 30 天</p></div><span class="mb-rank-val">新人 +158%</span></div>
+      </div>
+      <div class="mb-rank-list" data-mb-panel="praise" hidden>
+        <div class="mb-rank-row"><span class="mb-rank-no">01</span><div class="mb-rank-info"><h3>《门洞另一侧》· 老城区 7 个可进入的隐秘通道测评</h3><p>补充路线信息最多 · 评论 1,208 条</p></div><span class="mb-rank-val">口碑 9.6</span></div>
+        <div class="mb-rank-row"><span class="mb-rank-no">02</span><div class="mb-rank-info"><h3>创作者访谈：我用三年时间给城市画了一张暗门地图</h3><p>收藏完成率最高 · 评论 864 条</p></div><span class="mb-rank-val">口碑 9.4</span></div>
+        <div class="mb-rank-row"><span class="mb-rank-no">03</span><div class="mb-rank-info"><h3>天台上的春天：给一个荒废屋顶做 30 天影像记录</h3><p>回看次数最多 · 评论 721 条</p></div><span class="mb-rank-val">口碑 9.2</span></div>
+        <div class="mb-rank-row"><span class="mb-rank-no">04</span><div class="mb-rank-info"><h3>给新手的第一份导航攻略：怎么判断一个地方能不能拍</h3><p>被引用次数最多 · 评论 690 条</p></div><span class="mb-rank-val">口碑 9.1</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- M8 用户评价（引用摘录 + 双列短评） -->
+  <section class="mb-section" id="mb-comments" aria-labelledby="mbCommentTitle">
+    <div class="mb-wrap">
+      <div class="mb-sec-head">
+        <div>
+          <span class="mb-eyebrow">Voices · 社区声音</span>
+          <h2 id="mbCommentTitle">用户与创作者如何评价秘密基地导航入口</h2>
+          <p>来自评论区、投稿反馈与合作回访的真实留言节选，保留了原始语气与长度。</p>
+        </div>
+      </div>
+      <div class="mb-quote">
+        <span class="mb-quote-mark" aria-hidden="true">“</span>
+        <div>
+          <blockquote>我按你们的路线卡去了那个天台，第一次发现原来我家附近还有这种地方。视频里那句「第三个入口」是真的，我找了两次才找到。</blockquote>
+          <cite><b>@借光的人</b> · 杭州 · 注册用户 7 个月</cite>
+        </div>
+      </div>
+      <div class="mb-comments">
+        <article class="mb-comment">
+          <div class="mb-comment-head"><span class="mb-comment-avatar" style="background:#2f6d6a">林</span><span class="mb-comment-name">林木木 <span>2026-11-18</span></span></div>
+          <div class="mb-comment-stars">★★★★★</div>
+          <p>剪辑节奏很舒服，尤其是走路那段没有加旁白，只留脚步声，很对。</p>
+        </article>
+        <article class="mb-comment">
+          <div class="mb-comment-head"><span class="mb-comment-avatar" style="background:#b4543f">岩</span><span class="mb-comment-name">岩井不下雨 <span>2026-11-17</span></span></div>
+          <div class="mb-comment-stars">★★★★★</div>
+          <p>补一个信息：那个侧门周末会锁，建议工作日去，视频里没说清楚。希望编辑能看到并补进路线卡。</p>
+        </article>
+        <article class="mb-comment">
+          <div class="mb-comment-head"><span class="mb-comment-avatar" style="background:#5d4a6b">一</span><span class="mb-comment-name">一只慢羊 <span>2026-11-16</span></span></div>
+          <div class="mb-comment-stars">★★★★☆</div>
+          <p>整体很好，就是开头三十秒有点拖，如果能直接进入正题会更抓人，个人意见。</p>
+        </article>
+        <article class="mb-comment">
+          <div class="mb-comment-head"><span class="mb-comment-avatar" style="background:#2d4a63">北</span><span class="mb-comment-name">北纬三十度 <span>2026-11-15</span></span></div>
+          <div class="mb-comment-stars">★★★★★</div>
+          <p>看完立刻打开了地图，这种冲动很少有了。平台的路线卡做得比很多专业攻略还细。</p>
+        </article>
+        <article class="mb-comment">
+          <div class="mb-comment-head"><span class="mb-comment-avatar" style="background:#c57f1a">陈</span><span class="mb-comment-name">陈小满 <span>2026-11-14</span></span></div>
+          <div class="mb-comment-stars">★★★★☆</div>
+          <p>作为新人投稿过一次，编辑给了很长的修改意见，虽然没通过但学到了很多，谢谢。</p>
+        </article>
+        <article class="mb-comment">
+          <div class="mb-comment-head"><span class="mb-comment-avatar" style="background:#3c5a4e">周</span><span class="mb-comment-name">周末不加班 <span>2026-11-12</span></span></div>
+          <div class="mb-comment-stars">★★★★★</div>
+          <p>喜欢这个平台慢一点的节奏，别的网站都在追热点，这里还在做长内容。</p>
+        </article>
+        <article class="mb-comment">
+          <div class="mb-comment-head"><span class="mb-comment-avatar" style="background:#7a5b3a">曾</span><span class="mb-comment-name">曾路过 <span>2026-11-11</span></span></div>
+          <div class="mb-comment-stars">★★★★☆</div>
+          <p>建议增加一个「附近基地」的筛选，按城市看起来会更方便，现在只能翻列表。</p>
+        </article>
+        <article class="mb-comment">
+          <div class="mb-comment-head"><span class="mb-comment-avatar" style="background:#44607a">阿</span><span class="mb-comment-name">阿白的相机 <span>2026-11-09</span></span></div>
+          <div class="mb-comment-stars">★★★★★</div>
+          <p>器材对照那期看了两遍，结论很反常识但我认了，确实站位比设备重要。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 企业动态 + 合作品牌 -->
+  <section class="mb-section" id="mb-news" aria-labelledby="mbNewsTitle">
+    <div class="mb-wrap">
+      <div class="mb-sec-head">
+        <div>
+          <span class="mb-eyebrow">Updates · 企业动态</span>
+          <h2 id="mbNewsTitle">秘密基地导航入口官方发布与合作进展</h2>
+          <p>平台运营与内容更新的公开记录，包含功能上线、征集结果与合作伙伴名单。</p>
+        </div>
+      </div>
+      <div class="mb-two-col">
+        <div>
+          <div class="mb-news-list">
+            <article class="mb-news">
+              <time datetime="2026-11-21">2026-11-21</time>
+              <h3>「夜行地图」新增 14 个城市隐藏点位</h3>
+              <p>本轮新增点位覆盖旧码头、老城区与两个工业遗存片区，全部完成现场核实与拍摄许可记录，正式进入导航入口名单。</p>
+            </article>
+            <article class="mb-news">
+              <time datetime="2026-11-15">2026-11-15</time>
+              <h3>创作者支持计划第二期开放报名</h3>
+              <p>本期提供 20 个设备借用名额与 6 个后期资源支持席位，面向连续更新三个月以上的创作者，报名截止至本月底。</p>
+            </article>
+            <article class="mb-news">
+              <time datetime="2026-11-08">2026-11-08</time>
+              <h3>路线卡模板 2.0 全量上线</h3>
+              <p>新的路线卡增加通行时间、噪声等级与拍摄建议三项标准字段，已发布内容将在一个月内完成回填，提升攻略可复现性。</p>
+            </article>
+            <article class="mb-news">
+              <time datetime="2026-10-30">2026-10-30</time>
+              <h3>与企业合作方共建拍摄规范</h3>
+              <p>平台与三家长期合作品牌共同发布内容共创规范，明确商业合作不影响路线推荐逻辑，相关条款已写入官网合作说明。</p>
+            </article>
+          </div>
+        </div>
+        <div>
+          <h3 style="margin-bottom:16px">合作品牌与伙伴</h3>
+          <div class="mb-partners">
+            <div class="mb-partner">拾光影像<span>器材支持</span></div>
+            <div class="mb-partner">老城更新研究所<span>内容顾问</span></div>
+            <div class="mb-partner">南岸书店<span>场地合作</span></div>
+            <div class="mb-partner">行远户外<span>专题共创</span></div>
+            <div class="mb-partner">慢速唱片<span>配乐授权</span></div>
+            <div class="mb-partner">城事档案馆<span>资料支持</span></div>
+          </div>
+          <div style="margin-top:22px;display:flex;gap:10px;flex-wrap:wrap">
+            <button class="mb-btn mb-btn-primary" data-mb-open="submit">投稿与报名</button>
+            <button class="mb-btn mb-btn-line" data-mb-open="report">反馈建议</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div class="mb-faq" id="mb-faq">
+        <h3 style="margin-bottom:12px">常见问题</h3>
+        <details open>
+          <summary>秘密基地导航入口是什么性质的内容平台？</summary>
+          <p>这是平台官方网站，主要发布与城市隐藏空间相关的原创视频与图文攻略。所有正式收录的路线均经过现场核实，并提供可复现的时间、交通与拍摄建议。</p>
+        </details>
+        <details>
+          <summary>怎样把自己的秘密基地推荐给平台？</summary>
+          <p>通过官网任意「投稿」按钮提交基础信息，包括地点大概范围、可拍摄时段与联系方式。编辑会在五个工作日内回复，通过后进入现场核实流程。</p>
+        </details>
+        <details>
+          <summary>投稿的内容版权如何归属？</summary>
+          <p>创作者保留作品著作权，平台获得在中国大陆范围内的非独家展示与推荐授权。合作拍摄的专题内容单独签署协议，具体条款在投稿确认页可见。</p>
+        </details>
+        <details>
+          <summary>为什么有些视频只提供模糊的位置提示？</summary>
+          <p>出于对空间与周边居民的尊重，部分敏感或容量较小的点位只提供模糊区域提示。这一限制由编辑与空间管理方共同决定，不作个案放宽。</p>
+        </details>
+        <details>
+          <summary>视频能否下载用于学习或二次创作？</summary>
+          <p>官网提供标注为“开放式素材”的视频下载入口，可在注明来源的前提下用于非商业二次创作。其他内容仅支持在线高清播放。</p>
+        </details>
+        <details>
+          <summary>平台的创作者支持计划如何申请？</summary>
+          <p>在创作者主页提交申请，需满足连续更新三个月以上且有至少三部作品通过官方核实。审核周期约为两周，结果通过站内消息通知。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- S8 页脚 -->
+<footer class="mb-footer">
+  <div class="mb-wrap">
+    <div class="mb-footer-top">
+      <div class="mb-footer-brand">
+        <div class="mb-footer-logo">
+          <span class="mb-logo-mark" style="width:36px;height:36px;border-radius:10px;background:#e8a33d">
+            <svg viewBox="0 0 64 64" width="20" height="20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="32" cy="29" r="12" fill="none" stroke="#12202e" stroke-width="5"/><path d="M22 51h20" stroke="#12202e" stroke-width="5" stroke-linecap="round"/></svg>
+          </span>
+          <b>秘密基地导航入口</b>
+        </div>
+        <p>专注于城市隐藏空间与独立影像的垂直内容平台，以原创、正版、高清为底线，持续运营一个值得信赖的创作者社区。这里是官方网站，也是所有入口的官方发布中心。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#mb-focus">焦点内容</a></li>
+          <li><a href="#mb-videos">精品视频</a></li>
+          <li><a href="#mb-topics">专题企划</a></li>
+          <li><a href="#mb-rank">数据榜单</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于平台</h4>
+        <ul>
+          <li><a href="#mb-essay">品牌深度解析</a></li>
+          <li><a href="#mb-authors">创作者矩阵</a></li>
+          <li><a href="#mb-news">企业动态</a></li>
+          <li><a href="#mb-faq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与其中</h4>
+        <ul>
+          <li><a href="#mb-news" data-mb-open="submit">内容投稿</a></li>
+          <li><a href="#mb-news" data-mb-open="submit">专题报名</a></li>
+          <li><a href="#mb-comments">社区留言</a></li>
+          <li><a href="#mb-news" data-mb-open="report">意见反馈</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mb-footer-bottom">
+      <span>秘密基地导航入口 官方网站 | 版权所有 | 持续运营中</span>
+      <span>内容均为原创正版，转载请注明出处 · 备案号：京ICP备2026112203号</span>
+    </div>
+  </div>
+</footer>
+
+<button class="mb-top" id="mbTopBtn" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 14 6-6 6 6"/></svg>
+</button>
+
+<div class="mb-toast" id="mbToast" role="status" aria-live="polite"></div>
+
+<!-- 弹窗 -->
+<div class="mb-modal" id="mbModal" role="dialog" aria-modal="true" aria-labelledby="mbModalTitle">
+  <div class="mb-modal-box">
+    <button class="mb-modal-close" id="mbModalClose" aria-label="关闭弹窗">✕</button>
+    <div id="mbModalContent"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var toast = document.getElementById('mbToast');
+  var toastTimer = null;
+  function showToast(msg){
+    toast.textContent = msg;
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('show'); }, 2200);
+  }
+
+  /* 移动端导航 */
+  var menuBtn = document.getElementById('mbMenuBtn');
+  var nav = document.getElementById('mbNav');
+  menuBtn.addEventListener('click', function(){
+    var open = nav.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    menuBtn.textContent = open ? '✕' : '☰';
+  });
+  nav.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      if(window.innerWidth <= 760){
+        nav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+        menuBtn.textContent = '☰';
+      }
+    });
+  });
+
+  /* 搜索提示 */
+  var searchInput = document.getElementById('mbSearchInput');
+  var searchBtn = document.getElementById('mbSearchBtn');
+  var searchTip = document.getElementById('mbSearchTip');
+  var searchPool = ['天台','暗门','旧码头','夜行地图','阿枢','阿枝','野渡','专题企划','路线攻略','胶片测评','创作者访谈'];
+  function runSearch(){
+    var q = (searchInput.value || '').trim();
+    if(!q){
+      searchTip.innerHTML = '试试输入：<strong>天台</strong>、<strong>夜行地图</strong>、<strong>阿枢</strong>';
+      searchTip.classList.add('on');
+      return;
+    }
+    var matched = searchPool.filter(function(k){ return k.indexOf(q) !== -1; });
+    if(matched.length){
+      searchTip.innerHTML = '找到 <strong>' + matched.length + '</strong> 个相关关键词：' + matched.join('、') + '，已在精品内容库中为你标出。';
+    }else{
+      searchTip.innerHTML = '暂未找到「<strong>' + q.replace(/</g,'&lt;') + '</strong>」的直接结果，可尝试更短的关键词，或前往下方内容库浏览。';
+    }
+    searchTip.classList.add('on');
+  }
+  searchBtn.addEventListener('click', runSearch);
+  searchInput.addEventListener('keydown', function(e){ if(e.key === 'Enter'){ e.preventDefault(); runSearch(); } });
+  searchInput.addEventListener('input', function(){ if(!searchInput.value.trim()) searchTip.classList.remove('on'); });
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.mb-search')) searchTip.classList.remove('on');
+  });
+
+  /* 点赞 / 收藏 */
+  document.querySelectorAll('[data-mb-like]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var on = btn.classList.toggle('on');
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      btn.style.color = on ? 'var(--mb-teal)' : '';
+      showToast(on ? '已点赞，感谢你的支持' : '已取消点赞');
+    });
+  });
+  document.querySelectorAll('[data-mb-fav]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var on = btn.classList.toggle('on');
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      showToast(on ? '已加入我的收藏' : '已从收藏中移除');
+    });
+  });
+
+  /* 榜单标签筛选 */
+  document.querySelectorAll('.mb-rank-tab').forEach(function(tab){
+    tab.addEventListener('click', function(){
+      document.querySelectorAll('.mb-rank-tab').forEach(function(t){
+        t.classList.remove('active');
+        t.setAttribute('aria-selected','false');
+      });
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected','true');
+      var key = tab.getAttribute('data-mb-tab');
+      document.querySelectorAll('[data-mb-panel]').forEach(function(p){
+        p.hidden = p.getAttribute('data-mb-panel') !== key;
+      });
+    });
+  });
+
+  /* 弹窗系统 */
+  var modal = document.getElementById('mbModal');
+  var modalContent = document.getElementById('mbModalContent');
+  var modalClose = document.getElementById('mbModalClose');
+  var lastFocus = null;
+
+  function openModal(html){
+    lastFocus = document.activeElement;
+    modalContent.innerHTML = html;
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    modalClose.focus();
+  }
+  function closeModal(){
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+    if(lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  modalClose.addEventListener('click', closeModal);
+  modal.addEventListener('click', function(e){ if(e.target === modal) closeModal(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && modal.classList.contains('open')) closeModal(); });
+
+  var shareUrl = (function(){
+    var path = '';
+    try { path = window.location.pathname; } catch(err) { path = '/'; }
+    return 'https://secretbase.example.com' + path;
+  })();
+
+  var modalTemplates = {
+    share: function(){
+      return '<h3 id="mbModalTitle">分享这条内容</h3>' +
+        '<p>把秘密基地导航入口的精品内容推荐给同好，支持一键复制链接或选择常用平台。</p>' +
+        '<div class="mb-share-row">' +
+          '<button data-mb-copy>复制链接</button>' +
+          '<button data-mb-shareto="微信">微信</button>' +
+          '<button data-mb-shareto="微博">微博</button>' +
+          '<button data-mb-shareto="QQ">QQ</button>' +
+        '</div>';
+    },
+    report: function(){
+      return '<h3 id="mbModalTitle">意见反馈</h3>' +
+        '<p>路线信息有误、内容需要申诉，或有功能建议，都可以在这里提交。编辑会在三个工作日内处理。</p>' +
+        '<label class="mb-field" for="mbFbType">反馈类型</label>' +
+        '<input id="mbFbType" type="text" placeholder="例如：路线信息过期 / 内容申诉 / 功能建议">' +
+        '<label class="mb-field" for="mbFbText">具体描述</label>' +
+        '<textarea id="mbFbText" placeholder="请尽量说明位置与时间，便于我们核实"></textarea>' +
+        '<button class="mb-btn mb-btn-primary" data-mb-submit-fb>提交反馈</button>';
+    },
+    submit: function(){
+      return '<h3 id="mbModalTitle">投稿与报名</h3>' +
+        '<p>提交你的秘密基地方案或专题企划报名，通过核实后将进入官方网站的正式名单与展区。</p>' +
+        '<label class="mb-field" for="mbSubName">你的昵称</label>' +
+        '<input id="mbSubName" type="text" placeholder="创作者署名，将显示在作品页">' +
+        '<label class="mb-field" for="mbSubPlace">基地大概位置</label>' +
+        '<input id="mbSubPlace" type="text" placeholder="例如：老城区靠近旧码头的天台">' +
+        '<label class="mb-field" for="mbSubDesc">内容简述</label>' +
+        '<textarea id="mbSubDesc" placeholder="想拍什么、什么时段可进入、是否需要许可"></textarea>' +
+        '<button class="mb-btn mb-btn-primary" data-mb-submit-work>提交投稿</button>';
+    },
+    author: function(name, field){
+      return '<h3 id="mbModalTitle">' + name + '</h3>' +
+        '<p style="margin-bottom:10px"><span class="mb-tag">' + field + '</span></p>' +
+        '<p>常驻创作者，长期为秘密基地导航入口提供原创内容。习惯在正式开拍前多次实地行走，强调路线可复现性与拍摄诚实度，作品常进入官网焦点推荐与专题企划。</p>' +
+        '<p style="font-size:.84rem">可在精品内容库中查看其全部作品，也可以通过投稿入口向这位创作者发起合拍邀约。</p>' +
+        '<button class="mb-btn mb-btn-line" data-mb-goto-videos>查看其代表作</button>';
+    }
+  };
+
+  document.addEventListener('click', function(e){
+    var trigger = e.target.closest('[data-mb-open]');
+    if(trigger){
+      e.preventDefault();
+      var type = trigger.getAttribute('data-mb-open');
+      if(type === 'author'){
+        openModal(modalTemplates.author(trigger.getAttribute('data-mb-name'), trigger.getAttribute('data-mb-field')));
+      }else if(modalTemplates[type]){
+        openModal(modalTemplates[type]());
+      }
+      return;
+    }
+    if(e.target.closest('[data-mb-copy]')){
+      var text = shareUrl;
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text).then(function(){
+          showToast('链接已复制到剪贴板');
+        }).catch(function(){
+          showToast('复制失败，请手动选择链接');
+        });
+      }else{
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand('copy'); showToast('链接已复制到剪贴板'); }
+        catch(err){ showToast('复制失败，请手动选择链接'); }
+        document.body.removeChild(ta);
+      }
+      return;
+    }
+    var shareTo = e.target.closest('[data-mb-shareto]');
+    if(shareTo){
+      showToast('已生成分享卡片，请前往' + shareTo.getAttribute('data-mb-shareto') + '粘贴');
+      return;
+    }
+    if(e.target.closest('[data-mb-submit-fb]')){
+      var t = document.getElementById('mbFbText');
+      if(!t || !t.value.trim()){ showToast('请填写具体描述后再提交'); return; }
+      closeModal();
+      showToast('反馈已提交，感谢你的帮助');
+      return;
+    }
+    if(e.target.closest('[data-mb-submit-work]')){
+      var n = document.getElementById('mbSubName');
+      var d = document.getElementById('mbSubDesc');
+      if(!n || !n.value.trim() || !d || !d.value.trim()){ showToast('请填写昵称与内容简述'); return; }
+      closeModal();
+      showToast('投稿已收到，编辑将在五个工作日内回复');
+      return;
+    }
+    if(e.target.closest('[data-mb-goto-videos]')){
+      closeModal();
+      var target = document.getElementById('mb-videos');
+      if(target) target.scrollIntoView({behavior:'smooth'});
+      return;
+    }
+  });
+
+  /* 数字滚动 */
+  var counters = document.querySelectorAll('[data-mb-count]');
+  var counted = false;
+  function animateCount(el){
+    var target = parseInt(el.getAttribute('data-mb-count'), 10) || 0;
+    var start = null;
+    var dur = 1300;
+    function step(ts){
+      if(!start) start = ts;
+      var p = Math.min((ts - start) / dur, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      var val = Math.floor(target * eased);
+      el.textContent = target >= 10000 ? (val / 10000).toFixed(1) + ' 万' : val.toLocaleString('zh-CN');
+      if(p < 1) requestAnimationFrame(step);
+      else el.textContent = target >= 10000 ? (target / 10000).toFixed(1) + ' 万' : target.toLocaleString('zh-CN');
+    }
+    requestAnimationFrame(step);
+  }
+  function checkCounters(){
+    if(counted) return;
+    var anchor = document.querySelector('.mb-hero-stats');
+    if(!anchor) return;
+    var rect = anchor.getBoundingClientRect();
+    if(rect.top < window.innerHeight - 60){
+      counted = true;
+      counters.forEach(animateCount);
+    }
+  }
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById('mbTopBtn');
+  function onScroll(){
+    if(window.scrollY > 520) topBtn.classList.add('show');
+    else topBtn.classList.remove('show');
+    checkCounters();
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  checkCounters();
+  onScroll();
+})();
+</script>
+</body>
+              </html>
